@@ -9,7 +9,7 @@ class GenresController < ApplicationController
   end 
   
   def create 
-    @genre = Genre.new(params.require(:id).permit(:name))
+    @genre = Genre.new(params.require(:genre).permit(:name))
     @genre.save
     redirect_to genre_path(@genre)
   end 
