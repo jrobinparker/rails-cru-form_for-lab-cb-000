@@ -23,5 +23,4 @@ class GenreController < ApplicationController
     redirect_to genre_path(@genre)
   end 
     
-  
 end
